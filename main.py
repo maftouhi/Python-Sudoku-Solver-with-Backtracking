@@ -24,5 +24,12 @@ def print_board(board):
                 print(board[i][j], end=' ')
 
 
+def find_empty(baord):
+    for i in range(len(baord)):
+        for j in range(len(baord[1])):
+            if baord[i][j] == 0:
+                return i, j
+
+
 print_board(board)
 
